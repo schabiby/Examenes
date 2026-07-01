@@ -10,6 +10,8 @@ from data_manager import (
     compute_total, count_entered,
     get_group_summary
 )
+from data_manager import USE_SUPABASE
+st.sidebar.info("💾 Data storage: " + ("Supabase (cloud)" if USE_SUPABASE else "Local JSON (temporary)"))
 from pdf_generator import generate_pdf_report
 from averages import compute_score_out_of_10, build_full_dataframe_with_averages, separate_data_from_full_df
 
