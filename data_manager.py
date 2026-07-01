@@ -5,7 +5,7 @@ from supabase import create_client, Client
 import streamlit as st
 
 # Supabase credentials (store in st.secrets)
-url = st.secrets["https://your-project-ref.supabase.co"]
+url = st.secrets["https://ztlemssridgrenpkkbdv.supabase.co"]
 key = st.secrets["sb_publishable_bKv9fj-e3L9PNj5uhUQVUA_iR6bJdWM"]
 supabase: Client = create_client(url, key)
 
